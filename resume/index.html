@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/hnglogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="section-one">
+            <div class="content">
+                <h3>Hi! I am
+                    <span class="name">Chibuike Umechukwu</span>
+                    <img src="./images/peace.png" alt="peace sign with a hand">
+                </h3>
+            </div>
+
+            <div class="main-image">
+                <img src="./images/img.jpg " alt="me me me">
+            </div>
+        </section>
+        <section class="section-two">
+            <div>
+                <h2> My Resume (
+                    <span class="open-button" onclick="openForm()">Contact Me</span> )
+                </h2>
+            </div>
+
+            <article>
+                <h3>Skills</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>NodeJs</li>
+                    <li>MongoDB</li>
+                    <li>Postgres</li>
+                    <li>SocketIO</li>
+                    <li>Redis</li>
+                    <li>RabbitMQ</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Projects</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Comurule/simple-express-mongo-application" target="_blank">
+                            A basic NodeJs App
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Comurule/Online-Tutor-API" target="_blank">
+                            An Online School anagement System
+                        </a>
+                    </li>
+                </ul>
+                <br />
+            </article>
+            <article>
+                <h3>Work History</h3>
+                <p>Backend Intern - HNG Internship (AUGUST 2021 TILL PRESENT)</p>
+                <ul>
+                    <li>
+                        Wrote an article on my programmng journey.
+                    </li>
+                    <li>
+                        Built a simple logger program.
+                    </li>
+                    <li>Built a resume page with a contact for in it, using HTML, Css, JavaScript and some serverside
+                        NodeJs.</li>
+                </ul>
+                <br />
+            </article>
+        </section>
+        <section class="contact-form">
+            <div class="form-popup" id="contactForm">
+                <form class="form-container" id="formProper">
+                    <h1>Contact Form</h1>
+
+                    <input type="text" placeholder="Enter Your Name" name="name">
+                    <input type="text" placeholder="Enter Your Email" name="email">
+                    <textarea placeholder="Enter Your Message" name="body"></textarea>
+
+                    <button type="button" class="btn" id="formSubmit" onclick="handleSubmit()">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <script src="/script.js"></script>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-name">
+            <p>&copy; 2021</p>
+        </div>
+        <div class="footer-image">
+            <img src="./images/Zuri-HNG-I4G.png">
+        </div>
+    </footer>
+</body>
+
+</html>
